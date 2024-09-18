@@ -20,7 +20,7 @@ class Triangle:
         a, b, c = sorted([self.side1, self.side2, self.side3])
         return a**2 + b**2 == c**2
 
-    def classifyTriangle(self):
+    def classify_triangle(self):
         if (self.side1 == self.side2 == self.side3):
             return 'Equilateral Triangle'
         elif self.side1 == self.side2 or self.side2 == self.side3 or self.side1 == self.side3:

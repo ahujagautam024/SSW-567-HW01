@@ -35,30 +35,30 @@ def test_valid_triangle():
 
 def test_right_angle():
     triangle = Triangle(3, 4, 5)
-    assert triangle.classifyTriangle() == "Right angle Triangle"
+    assert triangle.classify_triangle() == "Right angle Triangle"
 
     triangle2 = Triangle(12, 5, 13)
-    assert triangle.classifyTriangle() == "Right angle Triangle"
+    assert triangle.classify_triangle() == "Right angle Triangle"
 
 def test_equilateral():
     triangle = Triangle(3, 3, 3)
-    assert triangle.classifyTriangle() == "Equilateral Triangle"
+    assert triangle.classify_triangle() == "Equilateral Triangle"
 
     triangle2 = Triangle(12, 12, 12)
-    assert triangle2.classifyTriangle() == "Equilateral Triangle"
+    assert triangle2.classify_triangle() == "Equilateral Triangle"
 
 def test_isosceles():
     triangle = Triangle(3, 4, 3)
-    assert triangle.classifyTriangle() == "Isosceles Triangle"
+    assert triangle.classify_triangle() == "Isosceles Triangle"
 
     triangle2 = Triangle(1, 12, 12)
-    assert triangle2.classifyTriangle() == "Isosceles Triangle"
+    assert triangle2.classify_triangle() == "Isosceles Triangle"
 
 def test_scalene():
     triangle = Triangle(32, 15, 34)
-    assert triangle.classifyTriangle() == "Scalene Triangle"
+    assert triangle.classify_triangle() == "Scalene Triangle"
 
     triangle2 = Triangle(5, 12, 14)
-    assert triangle2.classifyTriangle() == "Scalene Triangle"
+    assert triangle2.classify_triangle() == "Scalene Triangle"
 
 # endregion
