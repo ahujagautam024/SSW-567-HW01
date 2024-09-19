@@ -3,6 +3,13 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Ignore PDF files
+*.pdf
+
+# Ignore ZIP files
+*.zip
+
+
 # C extensions
 *.so
 
