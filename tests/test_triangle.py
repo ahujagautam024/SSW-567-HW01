@@ -38,7 +38,7 @@ def test_right_angle():
     assert triangle.classify_triangle() == "Right angle Triangle"
 
     triangle2 = Triangle(12, 5, 13)
-    assert triangle.classify_triangle() == "Right angle Triangle"
+    assert triangle2.classify_triangle() == "Right angle Triangle"
 
 def test_equilateral():
     triangle = Triangle(3, 3, 3)
