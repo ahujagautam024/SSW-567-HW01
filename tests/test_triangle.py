@@ -35,10 +35,10 @@ def test_valid_triangle():
 
 def test_right_angle():
     triangle = Triangle(3, 4, 5)
-    assert triangle.classify_triangle() == "Right angle Triangle"
+    assert triangle.classify_triangle() == "Scalene Right-Angle Triangle"
 
     triangle2 = Triangle(12, 5, 13)
-    assert triangle2.classify_triangle() == "Right angle Triangle"
+    assert triangle2.classify_triangle() == "Scalene Right-Angle Triangle"
 
 def test_equilateral():
     triangle = Triangle(3, 3, 3)

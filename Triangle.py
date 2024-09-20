@@ -20,12 +20,18 @@ class Triangle:
         a, b, c = sorted([self.side1, self.side2, self.side3])
         return a**2 + b**2 == c**2
 
+    
     def classify_triangle(self):
-        if (self.side1 == self.side2 == self.side3):
+        if self.side1 == self.side2 == self.side3:
             return 'Equilateral Triangle'
-        elif self.side1 == self.side2 or self.side2 == self.side3 or self.side1 == self.side3:
+        
+        if self.is_right_angle():
+            if self.side1 == self.side2 or self.side2 == self.side3 or self.side1 == self.side3:
+                return 'Isosceles Right-Angle Triangle'
+            else:
+                return 'Scalene Right-Angle Triangle'
+        
+        if self.side1 == self.side2 or self.side2 == self.side3 or self.side1 == self.side3:
             return 'Isosceles Triangle'
-        elif self.is_right_angle():
-            return 'Right angle Triangle'
-        else:
-            return 'Scalene Triangle'
+        
+        return 'Scalene Triangle'
